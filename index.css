@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-div .ClothingHeading,
+#main-div .AccessoriesHeading {
+  padding-left: 40px;
+}
+
+#main-div .clothSectionHeader {
+  color: #1b1919;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+#main-div .clothInnerDiv,
+#main-div .AccessoriesCard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 108px;
+}
+
+#main-div .clothInnerDiv .card,
+#main-div .AccessoriesCard .card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+
+#main-div .clothInnerDiv .card:hover,
+#main-div .AccessoriesCard .card:hover {
+  box-shadow: 0px 3px 10px #433d3d;
+}
+
+#main-div .clothInnerDiv .card .imgDiv,
+#main-div .AccessoriesCard .card .imgDiv {
+  display: flex;
+}
+
+#main-div .clothInnerDiv .card .imgDiv img,
+#main-div .AccessoriesCard .card .imgDiv img {
+  width: 100%;
+}
+
+#main-div .clothInnerDiv .card .detailsDiv,
+#main-div .AccessoriesCard .card .detailsDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+#main-div .clothInnerDiv .card .detailsDiv h3,
+#main-div .AccessoriesCard .card .detailsDiv h3 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #1b1919;
+  font-family: "Montserrat", sans-serif;
+}
+
+#main-div .clothInnerDiv .card .detailsDiv h4,
+#main-div .AccessoriesCard .card .detailsDiv h4 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #6e6e6e;
+  font-family: "Montserrat", sans-serif;
+}
+
+#main-div .clothInnerDiv .card .detailsDiv h5,
+#main-div .AccessoriesCard .card .detailsDiv h5 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #009688;
+  font-family: "Montserrat", sans-serif;
+  margin-block-start: 1.67em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1250px) {
+  #main-div .ClothingHeading,
+  #main-div .AccessoriesHeading {
+    padding-left: 10px;
+  }
+  #main-div .clothSectionHeader {
+    font-size: 1.3em;
+  }
+  #main-div .clothInnerDiv,
+  #main-div .AccessoriesCard {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #main-div .ClothingHeading,
+  #main-div .AccessoriesHeading {
+    padding-left: 10px;
+  }
+  #main-div .clothSectionHeader {
+    font-size: 1.3em;
+  }
+  #main-div .clothInnerDiv,
+  #main-div .AccessoriesCard {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #main-div .clothInnerDiv,
+  #main-div .AccessoriesCard {
+    grid-template-columns: repeat(2, 180px);
+  }
+  #main-div .clothInnerDiv .card,
+  #main-div .AccessoriesCard .card {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #main-div .ClothingHeading,
+  #main-div .AccessoriesHeading {
+    padding-left: 10px;
+  }
+  #main-div .clothSectionHeader {
+    font-size: 1.3em;
+  }
+  #main-div .clothInnerDiv,
+  #main-div .AccessoriesCard {
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+  }
+  #main-div .clothInnerDiv .card,
+  #main-div .AccessoriesCard .card {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #main-div .ClothingHeading,
+  #main-div .AccessoriesHeading {
+    padding-left: 10px;
+    text-align: center;
+  }
+  #main-div .ClothingHeading h2,
+  #main-div .AccessoriesHeading h2 {
+    font-size: 15px;
+  }
+  #main-div .clothSectionHeader {
+    font-size: 1.3em;
+  }
+  #main-div .clothInnerDiv,
+  #main-div .AccessoriesCard {
+    grid-template-columns: repeat(1, 200px);
+    justify-content: center;
+  }
+  #main-div .clothInnerDiv .card,
+  #main-div .AccessoriesCard .card {
+    width: 200px;
+  }
+}
